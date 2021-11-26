@@ -1,59 +1,44 @@
 $primary-color: #ff6174;
 $secondary-color: #3641b7;
+$tertiary-color: #fab832;
 $primary-text: #525252;
 $secondary-text: #ffffff;
-
-.index,
-.main {
-  display: none;
-}
+$vanilla: #f0e4d0;
+$chocolate: #553c13;
 
 @media screen and (max-width: 768px) {
-  body {
-    color: $primary-text;
-    .index,
-    .main {
-      display: block;
-    }
+  .btn-pink {
+    background-color: $primary-color;
+    border-radius: 1em;
   }
-  .index {
+  .home {
+    width: 100%;
+    height: 46em;
     img {
       width: 100%;
       margin-top: 40%;
     }
-    .btn-pink {
-      background-color: $primary-color;
-      color: $secondary-text;
-      border-radius: 1em;
-      font-weight: bold;
-    }
   }
-  .main {
-    .line {
-      height: 0.7em;
-      width: 50%;
-      border-radius: 1em;
-      background-color: $secondary-color;
-    }
+  .gift {
+    height: 46em;
+    background-color: $primary-color;
+    color: $secondary-text;
     h1 {
+      position: absolute;
       font-size: 3em;
+      margin-top: 5.3em;
+      color: $chocolate;
+      z-index: 1;
+    }
+    .col-11 {
+      background-color: $tertiary-color;
+      margin-top: 9em;
+      position: absolute;
+      border-radius: 1em;
     }
     .card {
-      height: 8em;
-      border: none;
-      text-align: center;
-      h5 {
-        background-color: $secondary-text;
-      }
-      img {
-        width: 100%;
-        height: 80%;
-        border-radius: 1em;
-        margin-bottom: 0.5em;
-      }
+      color: $primary-text;
     }
-    $vanilla: #f0e4d0;
-    $chocolate: #553c13;
     @mixin foodColoring($color) {
       background-color: $color;
       box-shadow: 0 2px 0px lighten($color, 5%), 0 4px 0px darken($color, 8.2%), 0 6px 0px darken($color, 8.4%), 0 8px 0px darken($color, 8.6%), 0 10px 0px darken($color, 8.8%), 0 12px 0px darken($color, 9%), 0 14px 0px darken($color, 9.2%),
@@ -61,13 +46,12 @@ $secondary-text: #ffffff;
         0 30px 0px darken($color, 10.8%);
     }
     .cake {
-      position: absolute;
+      position: relative;
       width: 250px;
-      height: 200px;
-      top: 54%;
+      height: 210px;
       left: 50%;
-      margin-top: -70px;
       margin-left: -125px;
+      margin-top: 3em;
     }
     .plate {
       width: 270px;

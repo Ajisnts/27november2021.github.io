@@ -1,59 +1,46 @@
-.index,
-.main {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
-  body {
-    color: #525252;
+  .btn-pink {
+    background-color: #ff6174;
+    border-radius: 1em;
   }
-  body .index,
-  body .main {
-    display: block;
+  .home {
+    width: 100%;
+    height: 46em;
   }
-  .index img {
+  .home img {
     width: 100%;
     margin-top: 40%;
   }
-  .index .btn-pink {
+  .gift {
+    height: 46em;
     background-color: #ff6174;
     color: #ffffff;
-    border-radius: 1em;
-    font-weight: bold;
   }
-  .main .line {
-    height: 0.7em;
-    width: 50%;
-    border-radius: 1em;
-    background-color: #3641b7;
-  }
-  .main h1 {
-    font-size: 3em;
-  }
-  .main .card {
-    height: 8em;
-    border: none;
-    text-align: center;
-  }
-  .main .card h5 {
-    background-color: #ffffff;
-  }
-  .main .card img {
-    width: 100%;
-    height: 80%;
-    border-radius: 1em;
-    margin-bottom: 0.5em;
-  }
-  .main .cake {
+  .gift h1 {
     position: absolute;
-    width: 250px;
-    height: 200px;
-    top: 54%;
-    left: 50%;
-    margin-top: -70px;
-    margin-left: -125px;
+    font-size: 3em;
+    margin-top: 5.3em;
+    color: #553c13;
+    z-index: 1;
   }
-  .main .plate {
+  .gift .col-11 {
+    background-color: #fab832;
+    margin-top: 9em;
+    position: absolute;
+    border-radius: 1em;
+  }
+  .gift .card {
+    color: #525252;
+  }
+  .gift .cake {
+    position: relative;
+    width: 250px;
+    height: 210px;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: 3em;
+  }
+  .gift .plate {
     width: 270px;
     height: 110px;
     position: absolute;
@@ -64,10 +51,10 @@
     -webkit-box-shadow: 0 2px 0 #b3b3b3, 0 4px 0 #b3b3b3, 0 5px 40px rgba(0, 0, 0, 0.5);
             box-shadow: 0 2px 0 #b3b3b3, 0 4px 0 #b3b3b3, 0 5px 40px rgba(0, 0, 0, 0.5);
   }
-  .main .cake > * {
+  .gift .cake > * {
     position: absolute;
   }
-  .main .layer {
+  .gift .layer {
     position: absolute;
     display: block;
     width: 250px;
@@ -77,16 +64,16 @@
     -webkit-box-shadow: 0 2px 0px #6a4b18, 0 4px 0px #33240b, 0 6px 0px #32230b, 0 8px 0px #31230b, 0 10px 0px #30220b, 0 12px 0px #2f220b, 0 14px 0px #2f210a, 0 16px 0px #2e200a, 0 18px 0px #2d200a, 0 20px 0px #2c1f0a, 0 22px 0px #2b1f0a, 0 24px 0px #2a1e09, 0 26px 0px #2a1d09, 0 28px 0px #291d09, 0 30px 0px #281c09;
             box-shadow: 0 2px 0px #6a4b18, 0 4px 0px #33240b, 0 6px 0px #32230b, 0 8px 0px #31230b, 0 10px 0px #30220b, 0 12px 0px #2f220b, 0 14px 0px #2f210a, 0 16px 0px #2e200a, 0 18px 0px #2d200a, 0 20px 0px #2c1f0a, 0 22px 0px #2b1f0a, 0 24px 0px #2a1e09, 0 26px 0px #2a1d09, 0 28px 0px #291d09, 0 30px 0px #281c09;
   }
-  .main .layer-top {
+  .gift .layer-top {
     top: 0px;
   }
-  .main .layer-middle {
+  .gift .layer-middle {
     top: 33px;
   }
-  .main .layer-bottom {
+  .gift .layer-bottom {
     top: 66px;
   }
-  .main .icing {
+  .gift .icing {
     top: 2px;
     left: 5px;
     background-color: #f0e4d0;
@@ -94,7 +81,7 @@
     height: 90px;
     border-radius: 50%;
   }
-  .main .icing:before {
+  .gift .icing:before {
     content: '';
     position: absolute;
     top: 4px;
@@ -107,7 +94,7 @@
     border-radius: 50%;
     z-index: 1;
   }
-  .main .drip {
+  .gift .drip {
     display: block;
     width: 50px;
     height: 60px;
@@ -115,7 +102,7 @@
     border-bottom-right-radius: 25px;
     background-color: #f0e4d0;
   }
-  .main .drip1 {
+  .gift .drip1 {
     top: 53px;
     left: 5px;
     -webkit-transform: skewY(15deg);
@@ -123,20 +110,20 @@
     height: 48px;
     width: 40px;
   }
-  .main .drip2 {
+  .gift .drip2 {
     top: 69px;
     left: 181px;
     -webkit-transform: skewY(-15deg);
             transform: skewY(-15deg);
   }
-  .main .drip3 {
+  .gift .drip3 {
     top: 54px;
     left: 90px;
     width: 80px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
   }
-  .main .candle {
+  .gift .candle {
     background-color: #7b020b;
     width: 16px;
     height: 50px;
@@ -146,7 +133,7 @@
     margin-left: -8px;
     z-index: 10;
   }
-  .main .candle:before {
+  .gift .candle:before {
     content: '';
     position: absolute;
     top: 0;
@@ -156,7 +143,7 @@
     border-radius: 50%;
     background-color: #ad030f;
   }
-  .main .flame {
+  .gift .flame {
     position: absolute;
     background-color: orange;
     width: 15px;
